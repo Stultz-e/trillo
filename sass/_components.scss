@@ -273,8 +273,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span {
+        margin-left: 3px;
+    }
+
     &:hover {
         color: var(--color-grey-dark-1);
+
+        span {
+            margin-left:: 8px;
+            transition: all .2s;
+        }
     }
 
     &:focus {
@@ -382,9 +391,13 @@
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
 
     &__text {
         margin-bottom: 2.5rem;
+        z-index: 10;
+        position: relative;
     }
 
     &__user {
@@ -407,16 +420,32 @@
 
     &__user-name {
         font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .4rem;
     }
 
     &__user-date {
         font-size: 1.1rem;
+        color: var(--color-grey-dark-3);
     }
 
     &__rating {
-        margin-left: auto;
+     color: var(--color-primary);
+     font-size: 2.2rem;
+     font-weight: 300;
     }
 
-
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -2rem;
+        left: -1rem;
+        line-height: 1;
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        z-index: 1;
+    }
 
 }
