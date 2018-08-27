@@ -1,35 +1,15 @@
-/*
-COLORS
-
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
 
 :root {
     --color-primary: #F6F6F6;
-    --color-primary-dark: #BA265D;
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f4f2f2;
+    --color-primary-dark: #484848;
+    --color-orange-light: #FFA100;
+    --color-orange-dark: #CE8C1B;
     --color-grey-light-3: #f0eeee;
-    --color-grey-light-4: #ccc;
-    --color-grey-dark-1: #333;
-    --color-grey-dark-2: #777;
-    --color-grey-dark-3: #999;
-    --shadow-dark: box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
-    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
-    --line: 1px solid var(--color-grey-light-2);
 
+    --shadow-dark: 0 2.5rem 4rem rgba(0, 0, 0, .4);
+    --shadow-light: 0 3px 4rem rgba(0, 0, 0, .16);
+    --line: 1px solid var(--color-grey-light-2);
+    --secondary-font:'Titillium Web', sans-serif;
 }
 
 $bp-largest: 75em;
@@ -58,14 +38,49 @@ $bp-small: 37.5rem;
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px, 10px / 16px = 62.5%
-    @media screen and (max-width: $bp-large) {
-        font-size: 50%;
-    }
+
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
-
+    background: var(--color-primary);
 }
+
+/* FONTS */
+h1 {
+    font-size: 7rem;  
+}
+
+h2 {
+    font-size: 5.5rem;  
+}
+
+h1,
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+h3 {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-primary); 
+}
+
+
+/* HELPER CLASSES */
+.p9 {
+    padding-top: 9rem;
+}
+
+.p2 {
+    padding-top: 2rem;
+}
+
+
+
+
