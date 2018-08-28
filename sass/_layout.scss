@@ -65,7 +65,7 @@
     clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: -15rem;
+    margin-top: -16rem;
     p {
         color: var(--color-primary);
         font-size: 1.6rem;
@@ -103,7 +103,7 @@
         box-shadow: 0px 25px 40px rgba(0, 0, 0, .40);
     }
     ul {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: var(--secondary-font);
         list-style: none;
         margin-top: 4rem;
@@ -118,7 +118,7 @@
             content: "";
             position: absolute;
             left: -20px;
-            bottom: 10px;
+            bottom:12px;
             width: 8px;
             height: 3px;
             background-color: var(--color-orange-light);
@@ -189,18 +189,16 @@ footer {
     }
 }
 
-    .legal-jargon {
-        padding: 1.25rem 0 1.25rem;
-        background-color: #242424;
-
-        span {
-            color: var(--color-primary);
-            font-size: 1.3rem;
-            text-transform: uppercase;
-        }
-
-        img {
-            width: 3.7rem;
-            height: 3.7rem;
-        }
+.legal-jargon {
+    padding: 1.25rem 0 1.25rem;
+    background-color: #242424;
+    span {
+        color: var(--color-primary);
+        font-size: 1.3rem;
+        text-transform: uppercase;
     }
+    img {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+}

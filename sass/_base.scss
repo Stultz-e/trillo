@@ -8,7 +8,7 @@
 
     --shadow-dark: 0 2.5rem 4rem rgba(0, 0, 0, .4);
     --shadow-light: 0 3px 4rem rgba(0, 0, 0, .16);
-    --line: 1px solid var(--color-grey-light-2);
+
     --secondary-font:'Titillium Web', sans-serif;
 }
 
@@ -50,7 +50,7 @@ body {
 
 /* FONTS */
 h1 {
-    font-size: 7rem;  
+    font-size: 9rem;  
 }
 
 h2 {
@@ -66,8 +66,8 @@ h2 {
 
 h3 {
     font-family: var(--secondary-font);
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 400;
     color: var(--color-primary); 
 }
 

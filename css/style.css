@@ -6,7 +6,6 @@
   --color-grey-light-3: #f0eeee;
   --shadow-dark: 0 2.5rem 4rem rgba(0, 0, 0, .4);
   --shadow-light: 0 3px 4rem rgba(0, 0, 0, .16);
-  --line: 1px solid var(--color-grey-light-2);
   --secondary-font:'Titillium Web', sans-serif; }
 
 /* 1200 */
@@ -34,7 +33,7 @@ body {
 
 /* FONTS */
 h1 {
-  font-size: 7rem; }
+  font-size: 9rem; }
 
 h2 {
   font-size: 5.5rem; }
@@ -47,8 +46,8 @@ h2 {
 
 h3 {
   font-family: var(--secondary-font);
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 400;
   color: var(--color-primary); }
 
 h4 {
@@ -141,7 +140,7 @@ h6 {
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-top: -15rem; }
+  margin-top: -16rem; }
   .skewed-content-1 p,
   .skewed-content-2 p {
     color: var(--color-primary);
@@ -173,7 +172,7 @@ h6 {
     height: 37.4rem;
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4); }
   .neighborhood ul {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: var(--secondary-font);
     list-style: none;
     margin-top: 4rem;
@@ -186,7 +185,7 @@ h6 {
       content: "";
       position: absolute;
       left: -20px;
-      bottom: 10px;
+      bottom: 12px;
       width: 8px;
       height: 3px;
       background-color: var(--color-orange-light); }
@@ -270,7 +269,7 @@ footer {
   border: none;
   color: var(--color-primary);
   font-style: var(--secondary-font);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   border-bottom: 2px solid var(--color-orange-light);
   display: inline-block;
