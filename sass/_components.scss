@@ -14,11 +14,9 @@
     color: var(--color-primary);
     font-family: var(--secondary-font);
     font-weight: 400;
-    transition: all .3s;
+    transition: all .5s;
     &:hover {
-        color: var(--color-primary-dark);
-        background-color: var(--color-primary);
-        transform: scale(1.1);
+        transform: scale(1.1);   
     }
 }
 
@@ -26,7 +24,7 @@
 /////////////////////////////////////////////
 /* BUTTON INLINE  */
 
-.btn-inline {
+.btn {
     border: none;
     color: var(--color-primary);
     font-style: var(--secondary-font);
@@ -35,62 +33,21 @@
     border-bottom: 2px solid var(--color-orange-light);
     display: inline-block;
     cursor: pointer;
-    transition: all .2s;
-    & span {
-        margin-left: 3px;
-    }
+    transition: all .6s;
+    padding-left: .3rem;
+    padding-right: .3rem;
+
     &:hover {
-        color: var(--color-grey-dark-1);
-        span {
-            margin-left: 8px;
-            transition: all .2s;
+        transform: translateY(-1.3rem) scale(1.1);
+    }
+
+    
+
+    &--cards {
+        color: var(--color-primary-dark);
+
+        &:hover {
+            color: var(--color-orange-dark);
         }
-    }
-    &:focus {
-        outline: none;
-        animation: pulsate 1s infinite;
-    }
-}
-
-
-
-.btn {
-    font-size: 1.4rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    border: none;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    &>* {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        transition: all .2s;
-    }
-    /* HIDES DAT SECOND BUTTON */
-    &__visible {
-        padding: 2rem 7.5rem;
-    }
-    &__invisible {
-        display: inline-block;
-        position: absolute;
-        padding: 2rem 0;
-        left: 0;
-        top: -100%;
-    }
-    &:hover {
-        background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
-    }
-    &:hover &__visible {
-        transform: translateY(100%);
-    }
-    &:hover &__invisible {
-        top: 0;
-    }
-    &:focus {
-        outline: none;
-        animation: pulsate 1s infinite;
     }
 }

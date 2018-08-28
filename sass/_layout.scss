@@ -6,13 +6,13 @@
     padding: 2rem 0;
 }
 
+/* CTA SECTION  */
 
 .cta {
     height: 100vh;
-    background-image: linear-gradient(to right top, rgba(72,72,72,.40), rgba(14,14,14,.40)), url(../img/cta-img.jpg); 
+    background-image: linear-gradient(to right top, rgba(72, 72, 72, .40), rgba(14, 14, 14, .40)), url(../img/cta-img.jpg);
     background-position: center;
     background-size: cover;
-
     &__text-box {
         position: absolute;
         top: 45%;
@@ -23,14 +23,49 @@
     }
 }
 
-.request-tour {
+/* OPTIONS SECTION */
+
+.options {
+    padding: 10rem 0 22rem;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .16);
+    img {
+        height: 25.2rem;
+        max-width: 100%;
+    }
+    &__content {
+        padding: 3rem 0;
+        p {
+            font-size: 1.4rem;
+            max-width: 25.8rem;
+            margin: auto;
+            line-height: 2.5rem;
+        }
+        h4 {
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+/* SKEWED CONTENT SECTIONS */
+
+.skewed-content-1,
+.skewed-content-2 {
     background-position: center;
     background-size: cover;
     padding: 25rem 0;
-    background-image: linear-gradient(to right top, rgba(59,59,59,1), rgba(39,39,39,.75)), url(../img/skewed-img1.jpg); 
     clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin-top: -15rem;
-
     p {
         color: var(--color-primary);
         font-size: 1.6rem;
@@ -40,6 +75,132 @@
     }
 }
 
-.options {
-    height: 80vh;
+.skewed-content-1 {
+    background-image: linear-gradient(to right top, rgba(59, 59, 59, 1), rgba(39, 39, 39, .75)), url('../img/skewed-img1.jpg');
 }
+
+.skewed-content-2 {
+    background-image: linear-gradient(to right top, rgba(59, 59, 59, 1), rgba(39, 39, 39, .75)), url('../img/skewed-img2.jpg');
+}
+
+/* NEIGHBORHOOD SECTION  */
+
+.neighborhood {
+    padding: 12rem 0 20rem;
+    background-image: url('../img/map.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    h3 {
+        color: var(--color-primary-dark);
+        text-align: center;
+        margin-bottom: 8rem;
+        position: relative;
+    }
+    img {
+        max-width: 100%;
+        height: 37.4rem;
+        box-shadow: 0px 25px 40px rgba(0, 0, 0, .40);
+    }
+    ul {
+        font-size: 1.5rem;
+        font-family: var(--secondary-font);
+        list-style: none;
+        margin-top: 4rem;
+        margin-left: 5.5rem;
+    }
+    li:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            bottom: 10px;
+            width: 8px;
+            height: 3px;
+            background-color: var(--color-orange-light);
+        }
+    }
+}
+
+.contact {
+    background-image: radial-gradient(#6B6A6A, #484848);
+    padding: 10rem 0;
+    border-bottom: 1px solid #707070;
+    img {
+        width: 15.6rem;
+        height: 15.6rem;
+        border-radius: 10rem;
+        /* don chang */
+        box-shadow: 0px 3px 50px rgba(0, 0, 0, .16);
+    }
+    h3 {
+        text-align: center;
+    }
+    .phone {
+        margin-left: 1rem;
+    }
+    h6 {
+        text-align: center;
+        line-height: 1.8;
+    }
+    .info {
+        font-size: 1.4rem;
+        font-family: var(--secondary-font);
+        color: var(--color-primary);
+    }
+}
+
+footer {
+    background-color: var(--color-primary-dark);
+    padding: 5rem 0 0 0;
+    ul {
+        font-size: 1.3rem;
+        list-style: none;
+        color: var(--color-primary);
+    }
+    li:first-child {
+        text-transform: uppercase;
+        font-family: var(--secondary-font);
+        font-size: 2rem;
+    }
+    li:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    li:last-child {
+        padding-bottom: 4rem;
+    }
+}
+
+.branding {
+    border-top: 1px solid #707070;
+    padding: 2.5rem 0 2.5rem;
+    .social-medias {
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        img {
+            max-width: 100%;
+            height: 2.5rem;
+        }
+    }
+}
+
+    .legal-jargon {
+        padding: 1.25rem 0 1.25rem;
+        background-color: #242424;
+
+        span {
+            color: var(--color-primary);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 3.7rem;
+            height: 3.7rem;
+        }
+    }

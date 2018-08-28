@@ -71,15 +71,55 @@ h3 {
     color: var(--color-primary); 
 }
 
+h4 {
+    font-size: 2.2rem;
+    color: var(--color-primar-dark); 
+    font-family: var(--secondary-font);
+}
+
+h5 {
+    font-size: 2rem; 
+    font-family: var(--secondary-font);
+    color: var(--color-primary); 
+}
+
+
+h6 {
+    font-size: 1.4rem; 
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    color: var(--color-primary); 
+}
+
 
 /* HELPER CLASSES */
-.p9 {
+.pmost {
     padding-top: 9rem;
 }
 
-.p2 {
+.pmore {
+    padding-top: 7rem
+}
+
+.p3 {
+    padding-top: 3rem;
+}
+
+.pleast {
     padding-top: 2rem;
 }
+
+
+.mlr {
+    margin: 0 10rem;
+}
+
+::selection {
+background: #1b5187;
+color: #fff;
+}
+
+
 
 
 
