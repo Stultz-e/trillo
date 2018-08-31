@@ -39,7 +39,8 @@
 }
 
 .cards {
-    display: flex;
+    display: block;
+    
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
@@ -81,12 +82,11 @@
     background-attachment: fixed;
     position: relative;
     z-index: 2;
-
     h3 {
         text-align: center;
     }
     p {
-        color: var(--color-primary);
+        color: $color-primary;
         font-size: 1.5rem;
         line-height: 2.8rem;
         text-align: center;
@@ -108,14 +108,12 @@
 .skewed-content-2 {
     background-image: linear-gradient(to right top, rgba(59, 59, 59, 1), rgba(39, 39, 39, .75)), url('../img/skewed-img2.jpg');
     clip-path: polygon(0 80%, 0 0, 100% 20%, 100% 100%);
-
     @include respond(lg) {
         clip-path: polygon(0 90%, 0 0, 100% 10%, 100% 100%);
     }
     @include respond(phone) {
         clip-path: polygon(0 100%, 0 0, 100% 0%, 100% 100%);
     }
-
 }
 
 /* NEIGHBORHOOD SECTION  */
@@ -127,13 +125,11 @@
     background-size: cover;
     position: relative;
     z-index: 0;
-   
-
     &::after {
         content: "";
         position: absolute;
         width: 50%;
-        height: 100%; 
+        height: 100%;
         top: 0;
         right: 0;
         opacity: 1;
@@ -142,11 +138,15 @@
         background-size: cover;
         background-position: left;
         -webkit-filter: sepia(1);
-         filter: sepia(1);
-    }
+        filter: sepia(1);
 
+        @include respond (phone) {
+            width: 100%;
+            opacity: .3;
+        }
+    }
     h3 {
-        color: var(--color-primary-dark);
+        color: $color-primary-dark;
         position: relative;
     }
     ul {
@@ -154,7 +154,7 @@
         flex-flow: column;
         align-items: flex-start;
         font-size: 1.8rem;
-        font-family: var(--secondary-font);
+        font-family: $secondary-font;
         list-style: none;
         margin-top: 4rem;
         margin-left: 4rem;
@@ -174,7 +174,7 @@
             bottom: 12px;
             width: 8px;
             height: 3px;
-            background-color: var(--color-orange-light);
+            background-color: $color-orange-light;
         }
     }
 }
@@ -203,32 +203,32 @@
 
 .contact {
     padding: 10rem 0;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid $color-grey;
     padding: 0 3rem;
 }
 
 /* FOOTER -------------------------------------------------- */
 
 .location {
-    background-color: var(--color-primary-dark);
+    background-color: $color-primary-dark;
     padding: 1.5rem 3rem;
-    border-bottom: 1px solid var(--color-orange-light);
+    border-bottom: 1px solid $color-grey;
     h3 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 
 footer {
-    background-color: var(--color-primary-dark);
-    padding: 5rem 3rem 0 3rem;
+    background-color: $color-primary-dark;
+    padding: 5rem 0 0 0;
     ul {
         font-size: 1.3rem;
         list-style: none;
-        color: var(--color-primary);
+        color: $color-primary;
     }
     li:first-child {
         text-transform: uppercase;
-        font-family: var(--secondary-font);
+        font-family: $secondary-font;
         font-size: 2rem;
     }
     li:not(:last-child) {
@@ -240,30 +240,49 @@ footer {
 }
 
 .branding {
-    border-top: 1px solid #707070;
+    border-top: 1px solid $color-grey;
     padding: 2.5rem 0 2.5rem;
     @include respond (phone) {}
     .social-medias {
-        display: flex;
-        justify-content: space-around;
-        width: 20%;
+        display: inline-block;
+        img:not(:last-child) {
+            padding-right: 1.5rem;
+        }
+
         img {
             max-width: 100%;
             height: 2.5rem;
         }
     }
+    p {   /* RIGHT SPOT, WHO KNOWS! */
+        font-size: 1rem;
+        color: #b6b6b6;
+        padding-top: 3rem;
+    }
+}
+
+.logo {
+    width: 13.5%;
+}
+
+.eqicon {
+    opacity: 0.5;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .legal-jargon {
     padding: 1.25rem 3rem 1.25rem;
-    background-color: #242424;
+    background-color: #373737;
     span {
-        color: var(--color-primary);
-        font-size: 1.3rem;
+        color: $color-primary;
+        font-size: 1.1rem;
         text-transform: uppercase;
+        padding-right: 3px;
     }
     img {
         width: 3.7rem;
         height: 3.7rem;
+        opacity: .7;
     }
 }
