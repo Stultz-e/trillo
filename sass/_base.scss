@@ -49,6 +49,10 @@
 
 /* VARIABLES  */
 
+// $css-vars-use-native: true; //
+
+
+
 :root {
     --color-primary: #F6F6F6;
     --color-primary-dark: #484848;
@@ -59,6 +63,8 @@
     --shadow-light: 0 3px 4rem rgba(0, 0, 0, .16);
     --secondary-font: 'Titillium Web', sans-serif;
 }
+
+
 
 * {
     margin: 0;
