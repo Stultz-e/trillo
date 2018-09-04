@@ -179,7 +179,7 @@ h6 {
       margin-bottom: 4rem; } }
   .cards img {
     height: auto;
-    max-width: 100%; }
+    width: 100%; }
   .cards__content {
     padding: 3rem 1rem; }
     .cards__content p {
@@ -317,9 +317,15 @@ footer {
     list-style: none;
     color: #F6F6F6;
     /*   IMAGE SHRINKAGE  */ }
+    @media (max-width: 407px) {
+      footer ul {
+        flex: 0 0 100%; } }
     @media (max-width: 48em) {
       footer ul:nth-child(1), footer ul:nth-child(2), footer ul:nth-child(3), footer ul:nth-child(4) {
         display: none; } }
+    @media (max-width: 407px) {
+      footer ul {
+        flex: 0 0 100%; } }
   footer li:first-child {
     text-transform: uppercase;
     font-family: "Titillium Web", sans-serif;
@@ -328,6 +334,9 @@ footer {
     margin-bottom: 1.2rem; }
   footer li:last-child {
     padding-bottom: 4rem; }
+  @media (max-width: 407px) {
+    footer {
+      text-align: left; } }
 
 .branding {
   border-top: 1px solid #6B6B6B;
