@@ -93,6 +93,17 @@ html {
     }
 }
 
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: $color-primary;
+    &:hover {
+        color: darken($color-primary, 15%);
+        text-decoration: none;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -105,7 +116,6 @@ body {
 
 h1 {
     font-size: 7rem;
-
     @include respond (lg) {
         font-size: 5.5rem;
      }
@@ -180,6 +190,11 @@ h6 {
 
 .mlr {
     margin: 0 10rem;
+}
+
+.p-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 /* WILL VARY */
