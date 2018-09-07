@@ -198,7 +198,6 @@ h6 {
 .skewed-content {
   background-position: center;
   background-size: cover;
-  padding: 18vh 1rem;
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -226,6 +225,7 @@ h6 {
         /* 600 / 16 */
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); } }
   .skewed-content--2 {
+    padding: 15.1vh 1rem;
     background-image: linear-gradient(to right top, #3b3b3b, rgba(39, 39, 39, 0.75)), url("../img/skewed-img2.jpg");
     clip-path: polygon(0 80%, 0 0, 100% 20%, 100% 100%);
     /*   IMAGE SHRINKAGE  */
