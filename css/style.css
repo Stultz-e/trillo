@@ -149,14 +149,14 @@ h6 {
       height: 115vh; } }
   .cta__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center; }
     @media (min-width: 112.5em) {
       .cta__text-box {
-        top: 50%; } }
+        top: 45%; } }
 
 /* OPTIONS SECTION */
 .options {
