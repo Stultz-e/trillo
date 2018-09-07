@@ -10,11 +10,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+<!--     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
    
-
 
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -22,8 +21,7 @@
 </head>
 
 <body>
-
-    <section class="cta animated fadeIn">
+    <section class="cta">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
@@ -60,7 +58,7 @@
             </nav>
         </div>
 
-        <div class="cta__text-box animated fadeIn">
+        <div class="cta__text-box fadeIn wow">
             <h1>Mulholland Drive</h1>
             <h2>Apartments</h2>
 
@@ -68,17 +66,14 @@
                 Find Your New Home
             </div>
         </div>
-
-
-
     </section> <!--  CTA END  -->
 
     <section class="skewed-content skewed-content--1 skewfix">
-        <div class="container">
-            <div class="row d-flex justify-content-center ">
-                <h3 class="animated fadeIn">Luxury Apartment Living In New Orleans</h3>
+        <div class="container fadeIn wow">
+            <div class="row d-flex justify-content-center">
+                <h3>Luxury Apartment Living In New Orleans</h3>
             </div>
-            <div class="row d-flex justify-content-center pleast animated fadeIn">
+            <div class="row d-flex justify-content-center pleast">
                 <p>The Uptowner Apartments encompasses an impressive selection of seven unique floor plans that are sure
                     to accompany an array of lifestyles and income brackets. Residents will have the ability to choose from
                     a one or two bedroom floor plan. Despite the apartment home you choose, each features a living and dining
@@ -95,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="cards animated">
+                    <div class="cards animated fadeInLeft wow">
                         <img src="../img/amenities-img.jpg" alt="amenities" class="img-responsive">
                         <div class="cards__content">
                             <h4>Making Home the Place to be</h4>
@@ -109,7 +104,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="cards">
+                    <div class="cards fadeIn wow">
                         <img src="../img/floorplans-img.jpg" alt="floorplans" class="img-responsive">
                         <div class="cards__content">
                             <h4>Something for Everyone</h4>
@@ -122,7 +117,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="cards">
+                    <div class="cards fadeInRight wow">
                         <img src="../img/gallery-img.jpg" alt="gallery" class="img-responsive">
                         <div class="cards__content">
                             <h4>Breathtaking Shots</h4>
@@ -139,7 +134,7 @@
     </section>
 
     <section class="skewed-content skewed-content--2 skewfix">
-        <div class="container">
+        <div class="container fadeIn wow">
             <div class="row d-flex justify-content-center">
                 <h3>Become A Tourist In Your Own City</h3>
             </div>
@@ -165,7 +160,7 @@
     <section class="neighborhood skewfix">
         <div class="container">
             <div class="row d-flex justify-content-between">
-                <div class="off-set-6 col-lg-6 d-flex flex-column">
+                <div class="off-set-6 col-lg-6 d-flex flex-column fadeInLeft wow">
                     <h3>Extraordinary Lifestyle</h3>
                     <ul>
                         <li>Fitness Center</li>
@@ -287,6 +282,10 @@
     </section>
 
   
+    <script src= "/js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
